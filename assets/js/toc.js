@@ -95,49 +95,53 @@ function generateTOC(reader, tocContainer) {
  */
 function setupScrollSpy(reader, tocContainer) {
 
-    const headings = reader.querySelectorAll(
+    const headings = [...reader.querySelectorAll(
         "h2, h3, h4, h5, h6"
-    );
+    )];
 
-    const links = tocContainer.querySelectorAll("a");
+    const links = [...tocContainer.querySelectorAll("a")];
 
-    if (headings.length === 0 || links.length === 0) {
+    if (!headings.length || !links.length)
         return;
-    }
 
-    const observer = new IntersectionObserver(
+    function updateActiveHeading() {
 
-        entries => {
+        const offset = 120;
 
-            entries.forEach(entry => {
+        let current = headings[0];
 
-                if (!entry.isIntersecting)
-                    return;
+        for (const heading of headings) {
 
-                links.forEach(link => {
-                    link.classList.remove("active");
-                });
+            if (heading.getBoundingClientRect().top <= offset) {
 
-                const active = tocContainer.querySelector(
-                    `a[href="#${entry.target.id}"]`
-                );
+                current = heading;
 
-                if (active) {
-                    active.classList.add("active");
-                }
+            } else {
 
-            });
+                break;
 
-        },
+            }
 
-        {
-            root: null,
-            rootMargin: "0px 0px -70% 0px",
-            threshold: 0
         }
 
-    );
+        links.forEach(link =>
+            link.classList.remove("active")
+        );
 
-    headings.forEach(heading => observer.observe(heading));
+        const active = tocContainer.querySelector(
+            `a[href="#${current.id}"]`
+        );
+
+        if (active) {
+
+            active.classList.add("active");
+
+        }
+
+    }
+
+    window.addEventListener("scroll", updateActiveHeading);
+
+    updateActiveHeading();
 
 }

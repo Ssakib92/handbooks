@@ -17,10 +17,10 @@
   },
   {
     "id": "handbook03",
-    "title": "Semiconductor Device Physics",
-    "shortTitle": "Semiconductor Devices",
-    "description": "Carrier statistics, transport, junctions, MOS structures and semiconductor fundamentals.",
-    "cover": "covers/device.jpg",
+    "title": "Reinforcement Learning for Scientific and Engineering Optimization",
+    "shortTitle": "Reinforcement Learning",
+   "description": "A comprehensive introduction to reinforcement learning, covering theoretical foundations, modern deep reinforcement learning algorithms, Gymnasium environment design, and practical implementation for scientific and engineering optimization, with a complete case study on MTJ device optimization.",
+   "cover": "covers/device.jpg",
     "folder": "handbook03"
   }
 ]

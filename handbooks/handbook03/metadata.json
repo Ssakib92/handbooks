@@ -1,0 +1,54 @@
+{
+  "id": "handbook13",
+  "title": "Reinforcement Learning for Scientific and Engineering Optimization",
+  "subtitle": "Research Foundation Handbook 13",
+
+  "author": "Sadman Sakib",
+
+  "version": "1.0",
+
+  "description": "A comprehensive introduction to reinforcement learning, covering theoretical foundations, modern deep reinforcement learning algorithms, Gymnasium environment design, and practical implementation for scientific and engineering optimization, with a complete case study on MTJ device optimization.",
+
+  "estimatedReadingHours": 60,
+
+  "coverImage": "cover.jpg",
+
+  "chapters": [
+    {
+      "id": "chapter01",
+      "title": "Reinforcement Learning Fundamentals"
+    },
+    {
+      "id": "chapter02",
+      "title": "Markov Decision Processes"
+    },
+    {
+      "id": "chapter03",
+      "title": "Tabular Reinforcement Learning"
+    },
+    {
+      "id": "chapter04",
+      "title": "Deep Reinforcement Learning"
+    },
+    {
+      "id": "chapter05",
+      "title": "Policy Gradient Methods"
+    },
+    {
+      "id": "chapter06",
+      "title": "Actor-Critic Algorithms"
+    },
+    {
+      "id": "chapter07",
+      "title": "Gymnasium and Environment Design"
+    },
+    {
+      "id": "chapter08",
+      "title": "Applying Reinforcement Learning to MTJ Optimization"
+    },
+    {
+      "id": "chapter09",
+      "title": "Building a Research-Grade RL Framework for MTJ Optimization"
+    }
+  ]
+}

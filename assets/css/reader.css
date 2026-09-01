@@ -16,6 +16,23 @@
 
 }
 
+/*==============================================================
+    READER WIDTH
+==============================================================*/
+
+#reader{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+}
+
+#reader-content{
+
+    max-width:900px;
+
+}
 
 /*==============================================================
     PARAGRAPHS
@@ -23,7 +40,7 @@
 
 #reader p {
 
-    margin: 1.2rem 0;
+    margin: .55rem 0;
 
     color: var(--color-text-secondary);
 
@@ -38,9 +55,9 @@
 
 #reader h1 {
 
-    margin-top: 0;
+    margin-top: .5rem;
 
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     padding-bottom: .8rem;
 
@@ -50,25 +67,27 @@
 
 #reader h2 {
 
-    margin-top: 3rem;
+    margin-top: .5rem;
 
     margin-bottom: 1rem;
 
-    padding-bottom: .4rem;
+    padding-bottom: .5rem;
 
-    border-bottom: 1px solid var(--color-border);
-
-}
-
-#reader h3 {
-
-    margin-top: 2.2rem;
+    border-bottom: 2px solid var(--color-border);
 
 }
 
-#reader h4 {
+#reader h3{
 
-    margin-top: 1.8rem;
+    margin-top:1rem;
+    margin-bottom:.45rem;
+
+}
+
+#reader h4{
+
+    margin-top:1rem;
+    margin-bottom:.35rem;
 
 }
 
@@ -88,7 +107,7 @@
 
 #reader li {
 
-    margin: .5rem 0;
+    margin: .2rem 0;
 
 }
 
@@ -122,35 +141,37 @@
     IMAGES
 ==============================================================*/
 
-#reader img {
+#reader img{
 
-    margin: 2rem auto;
+    display:block;
 
-    display: block;
+    margin:1.8rem auto;
 
-    max-width: 100%;
+    max-width:100%;
 
-    border-radius: 8px;
+    border-radius:10px;
 
-    box-shadow: var(--shadow-sm);
+    border:1px solid var(--color-border);
 
-}
-
-#reader figure {
-
-    margin: 2rem 0;
-
-    text-align: center;
+    box-shadow:var(--shadow-sm);
 
 }
 
-#reader figcaption {
+#reader figure{
 
-    margin-top: .8rem;
+    margin:2rem auto;
 
-    color: var(--color-text-muted);
+    text-align:center;
 
-    font-size: .9rem;
+}
+
+#reader figcaption{
+
+    margin-top:.6rem;
+
+    font-size:.9rem;
+
+    color:var(--color-text-muted);
 
 }
 
@@ -192,13 +213,15 @@
     CODE BLOCK
 ==============================================================*/
 
-#reader pre {
+#reader pre{
 
-    margin: 2rem 0;
+    position:relative;
 
-    padding: 1.2rem;
+    margin:1.2rem 0;
 
-    overflow-x: auto;
+    padding:1rem 1.2rem;
+
+    overflow-x:auto;
 
 }
 
@@ -207,19 +230,21 @@
     KaTeX
 ==============================================================*/
 
-.katex-display {
+.katex-display{
 
-    margin: 2rem auto !important;
+    margin:1.5rem auto !important;
 
-    overflow-x: auto;
+    padding:.3rem 0;
 
-    overflow-y: hidden;
+    overflow-x:auto;
+
+    overflow-y:hidden;
 
 }
 
-.katex {
+.katex{
 
-    font-size: 1.08em;
+    font-size:1.03em;
 
 }
 
@@ -442,5 +467,127 @@ input[type="checkbox"] {
 #toc .toc-level-4 {
 
     padding-left: 3rem;
+
+}
+
+/*==============================================================
+    COPY BUTTON
+==============================================================*/
+
+.copy-code{
+
+    position:absolute;
+
+    top:10px;
+
+    right:10px;
+
+    font-size:.8rem;
+
+    padding:.3rem .7rem;
+
+    border-radius:6px;
+
+    opacity:0;
+
+    transition:.2s;
+
+}
+
+pre:hover .copy-code{
+
+    opacity:1;
+
+}
+
+.copy-code.copied{
+
+    background:var(--color-success);
+
+    color:white;
+
+}
+
+
+/*==============================================================
+    CALLOUTS
+==============================================================*/
+
+.note,
+.tip,
+.warning,
+.definition{
+
+    margin:1.5rem 0;
+
+    padding:1rem 1.2rem;
+
+    border-left:4px solid var(--color-primary);
+
+    background:var(--color-surface);
+
+    border-radius:8px;
+
+}
+
+.tip{
+
+    border-left-color:var(--color-success);
+
+}
+
+.warning{
+
+    border-left-color:var(--color-warning);
+
+}
+
+.definition{
+
+    border-left-color:var(--color-primary);
+
+}
+
+
+/*==============================================================
+    TABLE WRAPPER
+==============================================================*/
+
+.table-wrapper{
+
+    overflow-x:auto;
+
+    margin:1.5rem 0;
+
+}
+
+
+/*==============================================================
+    FADE IN
+==============================================================*/
+
+#reader{
+
+    animation:fadeIn .25s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(8px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
 
 }
