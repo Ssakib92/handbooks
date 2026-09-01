@@ -1,0 +1,446 @@
+/*==============================================================
+    Research Foundation Handbook Series
+    Reader
+==============================================================*/
+
+
+/*==============================================================
+    READER CONTAINER
+==============================================================*/
+
+#reader {
+
+    background: transparent;
+
+    padding-bottom: 80px;
+
+}
+
+
+/*==============================================================
+    PARAGRAPHS
+==============================================================*/
+
+#reader p {
+
+    margin: 1.2rem 0;
+
+    color: var(--color-text-secondary);
+
+    text-align: justify;
+
+}
+
+
+/*==============================================================
+    HEADINGS
+==============================================================*/
+
+#reader h1 {
+
+    margin-top: 0;
+
+    margin-bottom: 2rem;
+
+    padding-bottom: .8rem;
+
+    border-bottom: 2px solid var(--color-border);
+
+}
+
+#reader h2 {
+
+    margin-top: 3rem;
+
+    margin-bottom: 1rem;
+
+    padding-bottom: .4rem;
+
+    border-bottom: 1px solid var(--color-border);
+
+}
+
+#reader h3 {
+
+    margin-top: 2.2rem;
+
+}
+
+#reader h4 {
+
+    margin-top: 1.8rem;
+
+}
+
+
+/*==============================================================
+    LISTS
+==============================================================*/
+
+#reader ul,
+#reader ol {
+
+    margin: 1rem 0;
+
+    padding-left: 2rem;
+
+}
+
+#reader li {
+
+    margin: .5rem 0;
+
+}
+
+
+/*==============================================================
+    TABLES
+==============================================================*/
+
+#reader table {
+
+    margin: 2rem 0;
+
+    font-size: .95rem;
+
+}
+
+#reader th {
+
+    background: var(--color-surface);
+
+}
+
+#reader td {
+
+    vertical-align: top;
+
+}
+
+
+/*==============================================================
+    IMAGES
+==============================================================*/
+
+#reader img {
+
+    margin: 2rem auto;
+
+    display: block;
+
+    max-width: 100%;
+
+    border-radius: 8px;
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+#reader figure {
+
+    margin: 2rem 0;
+
+    text-align: center;
+
+}
+
+#reader figcaption {
+
+    margin-top: .8rem;
+
+    color: var(--color-text-muted);
+
+    font-size: .9rem;
+
+}
+
+
+/*==============================================================
+    BLOCKQUOTE
+==============================================================*/
+
+#reader blockquote {
+
+    margin: 2rem 0;
+
+}
+
+
+/*==============================================================
+    HORIZONTAL RULE
+==============================================================*/
+
+#reader hr {
+
+    margin: 3rem 0;
+
+}
+
+
+/*==============================================================
+    INLINE CODE
+==============================================================*/
+
+#reader code {
+
+    font-size: .9rem;
+
+}
+
+
+/*==============================================================
+    CODE BLOCK
+==============================================================*/
+
+#reader pre {
+
+    margin: 2rem 0;
+
+    padding: 1.2rem;
+
+    overflow-x: auto;
+
+}
+
+
+/*==============================================================
+    KaTeX
+==============================================================*/
+
+.katex-display {
+
+    margin: 2rem auto !important;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+}
+
+.katex {
+
+    font-size: 1.08em;
+
+}
+
+
+/*==============================================================
+    MARKDOWN TASK LIST
+==============================================================*/
+
+.task-list-item {
+
+    list-style: none;
+
+}
+
+
+/*==============================================================
+    FOOTNOTES
+==============================================================*/
+
+.footnotes {
+
+    margin-top: 4rem;
+
+    border-top: 1px solid var(--color-border);
+
+    padding-top: 1.5rem;
+
+    color: var(--color-text-muted);
+
+    font-size: .9rem;
+
+}
+
+
+/*==============================================================
+    LINKS INSIDE CONTENT
+==============================================================*/
+
+#reader a {
+
+    text-decoration: underline;
+
+}
+
+
+/*==============================================================
+    DEFINITION LISTS
+==============================================================*/
+
+#reader dt {
+
+    font-weight: bold;
+
+    margin-top: 1rem;
+
+}
+
+#reader dd {
+
+    margin-left: 1.5rem;
+
+    margin-bottom: 1rem;
+
+}
+
+
+/*==============================================================
+    DETAILS
+==============================================================*/
+
+details {
+
+    margin: 1rem 0;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-sm);
+
+    padding: .8rem;
+
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+}
+
+
+/*==============================================================
+    MARKDOWN CHECKBOX
+==============================================================*/
+
+input[type="checkbox"] {
+
+    width: auto;
+
+    margin-right: .5rem;
+
+}
+
+
+/*==============================================================
+    RESPONSIVE
+==============================================================*/
+
+@media (max-width:900px){
+
+    #reader {
+
+        font-size: .98rem;
+
+    }
+
+    #reader h1 {
+
+        font-size: 2rem;
+
+    }
+
+    #reader h2 {
+
+        font-size: 1.6rem;
+
+    }
+
+    #reader h3 {
+
+        font-size: 1.3rem;
+
+    }
+
+}
+
+#toc-sidebar {
+
+    position: sticky;
+    top: 2rem;
+
+    align-self: start;
+
+    max-height: calc(100vh - 4rem);
+
+    overflow-y: auto;
+
+}
+
+.toc-header {
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+
+    color: var(--text-muted);
+
+}
+
+#toc ul {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+#toc a {
+
+    display: block;
+
+    padding: .3rem 0 .3rem 1rem;
+
+    border-left: 3px solid transparent;
+
+    color: var(--text-secondary);
+
+    text-decoration: none;
+
+    transition:
+        color .2s,
+        border-color .2s;
+
+}
+
+#toc a:hover {
+
+    color: var(--accent);
+
+}
+
+#toc a.active {
+
+    color: var(--accent);
+
+    font-weight: 600;
+
+    border-left: 3px solid var(--accent);
+
+    padding-left: .75rem;
+
+}
+
+#toc .toc-level-2 {
+
+    padding-left: 1rem;
+
+}
+
+#toc .toc-level-3 {
+
+    padding-left: 2rem;
+
+}
+
+#toc .toc-level-4 {
+
+    padding-left: 3rem;
+
+}

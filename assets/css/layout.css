@@ -1,0 +1,270 @@
+/*==============================================================
+    Research Foundation Handbook Series
+    Layout
+==============================================================*/
+
+
+/*==============================================================
+    PAGE
+==============================================================*/
+
+body {
+
+    min-height: 100vh;
+
+}
+
+header {
+
+    width: min(1200px, 92%);
+
+    margin: 40px auto 20px auto;
+
+}
+
+main {
+
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+}
+
+footer {
+
+    width: min(1200px, 92%);
+
+    margin: 50px auto;
+
+}
+
+
+/*==============================================================
+    HOMEPAGE
+==============================================================*/
+
+#handbook-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 24px;
+
+    margin-top: 40px;
+
+}
+
+.handbook-card {
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-lg);
+
+    padding: 24px;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+.handbook-card:hover {
+
+    transform: translateY(-4px);
+
+    background: var(--color-surface-hover);
+
+}
+
+.handbook-card h2 {
+
+    margin-top: 0;
+
+}
+
+.handbook-card p {
+
+    margin-bottom: 0;
+
+}
+
+
+/*==============================================================
+    HANDBOOK PAGE
+==============================================================*/
+
+#chapter-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    margin-top: 30px;
+
+}
+
+.chapter-card {
+
+    padding: 18px 22px;
+
+    border: 1px solid var(--color-border);
+
+    background: var(--color-surface);
+
+    border-radius: var(--radius-md);
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+.chapter-card:hover {
+
+    background: var(--color-surface-hover);
+
+    transform: translateX(6px);
+
+}
+
+
+/*==============================================================
+    CHAPTER PAGE
+==============================================================*/
+
+#topbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+#reader-layout {
+
+    width: min(1400px, 95%);
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: 260px 1fr;
+
+    gap: 40px;
+
+}
+
+#reader {
+
+    max-width: 900px;
+
+    min-width: 0;
+
+}
+
+#toc {
+
+    position: sticky;
+
+    top: 30px;
+
+    height: fit-content;
+
+}
+
+
+/*==============================================================
+    PREVIOUS / NEXT
+==============================================================*/
+
+footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+/*==============================================================
+    SIMPLE CONTAINER
+==============================================================*/
+
+.container {
+
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+}
+
+
+/*==============================================================
+    RESPONSIVE
+==============================================================*/
+
+@media (max-width: 900px) {
+
+    #reader-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    #toc {
+
+        display: none;
+
+    }
+
+    #topbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    #handbook-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+.reader-layout {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#reader-content {
+    min-width: 0;
+}
+
+@media (max-width: 900px) {
+
+    .reader-layout {
+        grid-template-columns: 1fr;
+    }
+
+    #toc-sidebar {
+        display: none;
+    }
+
+}

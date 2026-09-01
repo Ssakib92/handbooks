@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chapter Reader</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/reader.css">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" href="vendor/katex/katex.min.css">
+    <link rel="stylesheet" href="vendor/prism/prism.css">
+
+</head>
+
+<body>
+
+    <!-- ===================================================== -->
+    <!-- Header -->
+    <!-- ===================================================== -->
+
+    <header id="topbar">
+
+        <a href="#" id="back-link">← Handbook</a>
+
+        <h1 id="chapter-title"></h1>
+
+    </header>
+
+    <!-- ===================================================== -->
+    <!-- Reader -->
+    <!-- ===================================================== -->
+
+    <main class="reader-layout">
+
+        <!-- Table of Contents -->
+
+        <aside id="toc-sidebar">
+
+            <div class="toc-header">
+                On this page
+            </div>
+
+            <nav id="toc">
+
+                <!-- Generated automatically -->
+
+            </nav>
+
+        </aside>
+
+        <!-- Markdown Content -->
+
+        <article id="reader">
+
+            <!-- Markdown rendered here -->
+
+        </article>
+
+    </main>
+
+    <!-- ===================================================== -->
+    <!-- Footer Navigation -->
+    <!-- ===================================================== -->
+
+    <footer>
+
+        <button id="previous-button">
+
+            ← Previous
+
+        </button>
+
+        <button id="next-button">
+
+            Next →
+
+        </button>
+
+    </footer>
+
+    <!-- ===================================================== -->
+    <!-- Vendor Scripts -->
+    <!-- ===================================================== -->
+
+    <script src="vendor/markdown-it/markdown-it.min.js"></script>
+    <script src="vendor/markdown-it-texmath/texmath.min.js"></script>
+    <script src="vendor/katex/katex.min.js"></script>
+    <script src="vendor/prism/prism.js"></script>
+
+    <!-- ===================================================== -->
+    <!-- Project Scripts -->
+    <!-- ===================================================== -->
+
+    <script src="assets/js/toc.js"></script>
+    <script src="assets/js/reader.js"></script>
+
+</body>
+
+</html>
+```

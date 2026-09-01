@@ -1,0 +1,42 @@
+{
+  "id": "handbook02",
+  "title": "Solid State Physics for Device Researchers",
+  "subtitle": "Research Foundation Handbook 2",
+
+  "author": "Sadman Sakib",
+
+  "version": "1.0",
+
+  "description": "A comprehensive introduction to solid state physics aimed at semiconductor, photonics and quantum device researchers.",
+
+  "estimatedReadingHours": 35,
+
+  "coverImage": "cover.jpg",
+
+  "chapters": [
+    {
+      "id": "chapter01",
+      "title": "Introduction"
+    },
+    {
+      "id": "chapter02",
+      "title": "Crystal Structure"
+    },
+    {
+      "id": "chapter03",
+      "title": "Chemical Bonding"
+    },
+    {
+      "id": "chapter04",
+      "title": "Reciprocal Lattice"
+    },
+    {
+      "id": "chapter05",
+      "title": "Band Theory"
+    },
+    {
+      "id": "chapter06",
+      "title": "Phonons"
+    }
+  ]
+}

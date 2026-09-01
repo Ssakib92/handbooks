@@ -1,0 +1,26 @@
+[
+  {
+    "id": "handbook01",
+    "title": "Mathematical Methods for Device Researchers",
+    "shortTitle": "Mathematics",
+    "description": "Linear algebra, calculus, differential equations, vector calculus, Fourier analysis, probability and numerical methods.",
+    "cover": "covers/math.jpg",
+    "folder": "handbook01"
+  },
+  {
+    "id": "handbook02",
+    "title": "Solid State Physics for Device Researchers",
+    "shortTitle": "Solid State Physics",
+    "description": "Crystal structures, bonding, band theory, phonons and electronic properties of solids.",
+    "cover": "covers/solid-state.jpg",
+    "folder": "handbook02"
+  },
+  {
+    "id": "handbook03",
+    "title": "Semiconductor Device Physics",
+    "shortTitle": "Semiconductor Devices",
+    "description": "Carrier statistics, transport, junctions, MOS structures and semiconductor fundamentals.",
+    "cover": "covers/device.jpg",
+    "folder": "handbook03"
+  }
+]
