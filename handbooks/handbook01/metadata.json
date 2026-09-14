@@ -1,42 +1,100 @@
 {
-  "id": "handbook02",
-  "title": "Solid State Physics for Device Researchers",
-  "subtitle": "Research Foundation Handbook 2",
-
+  "id": "handbook03",
+  "title": "Solid State Physics for Semiconductor, Photonic, and Computational Materials Research",
+  "subtitle": "Research Foundation Handbook 3",
   "author": "Sadman Sakib",
-
   "version": "1.0",
-
-  "description": "A comprehensive introduction to solid state physics aimed at semiconductor, photonics and quantum device researchers.",
-
-  "estimatedReadingHours": 35,
-
+  "description": "A graduate-level foundation in solid-state physics covering crystal structures, reciprocal space, electronic structure, semiconductor materials, lattice dynamics, low-dimensional systems, and introductory electronic structure methods for semiconductor, photonic, and computational materials research.",
+  "estimatedReadingHours": 70,
   "coverImage": "cover.jpg",
-
   "chapters": [
     {
       "id": "chapter01",
-      "title": "Introduction"
+      "title": "Why Solid-State Physics Matters"
     },
     {
       "id": "chapter02",
-      "title": "Crystal Structure"
+      "title": "Atomic Structure and Chemical Bonding"
     },
     {
       "id": "chapter03",
-      "title": "Chemical Bonding"
+      "title": "Crystal Structures and Symmetry"
     },
     {
       "id": "chapter04",
-      "title": "Reciprocal Lattice"
+      "title": "Crystal Directions, Planes and Epitaxy"
     },
     {
       "id": "chapter05",
-      "title": "Band Theory"
+      "title": "Reciprocal Lattices"
     },
     {
       "id": "chapter06",
+      "title": "Brillouin Zones"
+    },
+    {
+      "id": "chapter07",
+      "title": "Diffraction"
+    },
+    {
+      "id": "chapter08",
+      "title": "Free Electron Models"
+    },
+    {
+      "id": "chapter09",
+      "title": "Electrons in Periodic Potentials"
+    },
+    {
+      "id": "chapter10",
+      "title": "Band Theory"
+    },
+    {
+      "id": "chapter11",
+      "title": "Effective Mass"
+    },
+    {
+      "id": "chapter12",
+      "title": "Density of States"
+    },
+    {
+      "id": "chapter13",
+      "title": "Fermi Level and Carrier Statistics"
+    },
+    {
+      "id": "chapter14",
+      "title": "Semiconductor Materials"
+    },
+    {
+      "id": "chapter15",
+      "title": "Optical Properties of Solids"
+    },
+    {
+      "id": "chapter16",
       "title": "Phonons"
+    },
+    {
+      "id": "chapter17",
+      "title": "Defects"
+    },
+    {
+      "id": "chapter18",
+      "title": "Magnetism"
+    },
+    {
+      "id": "chapter19",
+      "title": "Quantum Confinement"
+    },
+    {
+      "id": "chapter20",
+      "title": "Two-Dimensional Materials"
+    },
+    {
+      "id": "chapter21",
+      "title": "Introduction to Electronic Structure Methods"
+    },
+    {
+      "id": "chapter22",
+      "title": "Outlook and Transition"
     }
   ]
 }
